@@ -1,0 +1,244 @@
+$color1: #000;
+$color2: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+header {
+    .contenedor-header {
+        width: 100%;
+        background: $color1;
+        position: fixed;
+        z-index: 2;
+
+        .contenedor-nav {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            max-width: 1000px;
+            justify-content: space-between;
+        }
+    }
+}
+
+.barra {
+    width: auto;
+    height: 100px;
+    display: inline;
+}
+
+.logo {
+    display: inline;
+    width: 100px;
+}
+
+.menu {
+    list-style: none;
+    float: right;
+    display: inline;
+    padding-top: 70px;
+
+    li {
+        display: inline-block;
+
+        a {
+            padding: 10px;
+            text-decoration: none;
+            color: $color2;
+
+            &:hover {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/* ----- ----- MAIN ----- ----- */
+
+main {
+    padding-top: 90px;
+}
+
+main section {
+    padding-top: 20px;
+}
+
+main .espacios,
+    {
+    background: $color1;
+}
+
+main .principal {
+    padding: 30px;
+}
+
+main .principal .contenedor {
+    flex-direction: column;
+}
+
+main .principal .foto img {
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 32px;
+    color: $color1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 35px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+main .contenedor {
+    padding: 30px;
+    overflow: hidden;
+}
+
+main .servicio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .contenedor .servicio .img-servicio img {
+    max-width: 250px;
+    width: 100%;
+}
+
+main .contenedor .descripcion,
+main .espacios .contenedor .descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color2;
+}
+
+main .espacios .contenedor .img-espacios img {
+    width: 500px;
+    padding: 0 0 0 20px;
+}
+
+main .espacios .contenedor .descripcion .p-espacios {
+    font-size: 22 px;
+    color: $color2;
+}
+
+main .contenedor .img-idea img {
+    width: 500px;
+    padding: 0 0 0 20px;
+}
+
+table {
+    margin: 40px;
+}
+
+main .contenedor .noticia {
+    border: solid 1px $color1;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* ----- ----- GRID - NOTICIAS ----- ----- */
+
+.contenedor-grid {
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    justify-content: center;
+}
+
+.articulo {
+    border: 1px solid $color1;
+    margin: 6px;
+    padding: 6px;
+    width: 1fr;
+    height: 405px;
+}
+
+.articulo .not {
+    text-align: left;
+}
+
+main .noti {
+    padding: 60px;
+    height: 460px;
+}
+
+main section .contenedor-grid .noticia {
+    justify-self: end;
+}
+
+img {
+    width: 100%;
+}
+
+/* ----- ----- TRANSFORMACIONES ----- ----- */
+
+.img-servicio:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/* ----- ----- CONTACTO ----- ----- */
+
+.formulario {
+    padding-bottom: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+
+footer {
+    background: $color1;
+
+    .contenedor {
+        .mapa {
+            img {
+                max-width: 200px;
+                padding: 10px;
+            }
+        }
+
+        .direccion {
+            padding: 15px;
+            color: $color2;
+        }
+
+        .redes-sociales {
+            img {
+                width: 30px;
+            }
+        }
+    }
+}

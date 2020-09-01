@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Pagina de BIG Estudio de Arquitectos, seccion de contacto">
+  <meta name="keywords" content="BIG, Arquitectos, Arquitectura, Bjarke, Ingels, Obra, estudio, proyecto">
+  <title>BIG Arquitectos</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/prueba.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="contenedor-header">
+      <div class="contenedor-nav">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo de la empresa" />
+        </div>
+        <nav class="barra">
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="equipo.html">EQUIPO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="noticias.html">NOTICIAS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contactenos</h1><br>
+    <div class="container">
+      <div class="row mt-3 ">
+        <div class="col">
+          <form class="formulario">
+            <div class="form-group">
+              <label for="nombre">Nombre y apellido:</label>
+              <input type="text" class="form-control" name="nombre" id="nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="sexo">Sexo:</label>
+              <select name="sexo" class="form-control" id="sexo">
+                <option value="h">Hombre</option>
+                <option value="m">Mujer</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mail">E-mail:</label>
+              <input type="text" class="form-control" name="mail" id="mail" placeholder="contacto@mail.com">
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Telefono:</label>
+              <input type="text" class="form-control" name="telefono" id="telefono">
+            </div>
+
+            <div class="form-group">
+              <label for="comentario">Comentario:</label>
+              <textarea name="coemntario" class="form-control" placeholder="comentario"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-info btn-block">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="contenedor">
+      <section class="mapa">
+        <img src="img/mapa.jpg" alt="imagen" />
+      </section>
+      <section>
+        <div class="direccion">
+          <h5>Av. 9 de julio 111</h5>
+          <h6>Buenos Aires. Argentina</h6>
+        </div>
+        <div class="redes-sociales">
+          <img src="img/iconoIg.png" alt="imagen" />
+          <img src="img/iconoFb.png" alt="imagen" />
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
