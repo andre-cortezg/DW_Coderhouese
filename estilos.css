@@ -144,6 +144,10 @@ main .contenedor .img-idea img {
   padding: 0 0 0 20px;
 }
 
+.img-acerca img {
+  width: 200px;
+}
+
 table {
   margin: 40px;
 }
