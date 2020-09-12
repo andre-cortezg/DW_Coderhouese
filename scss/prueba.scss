@@ -1,5 +1,6 @@
 $color1: #000;
 $color2: #fff;
+$color3: rgb(190, 190, 190);
 
 * {
     margin: 0;
@@ -31,6 +32,7 @@ header {
             width: 100%;
             margin: auto;
             max-width: 1000px;
+            max-height: 100px;
             justify-content: space-between;
         }
     }
@@ -52,6 +54,7 @@ header {
     float: right;
     display: inline;
     padding-top: 70px;
+    margin-bottom: 0;
 
     li {
         display: inline-block;
@@ -60,6 +63,7 @@ header {
             padding: 10px;
             text-decoration: none;
             color: $color2;
+            font-size: 16px;
 
             &:hover {
                 font-weight: bold;
@@ -72,15 +76,14 @@ header {
 /* ----- ----- MAIN ----- ----- */
 
 main {
-    padding-top: 90px;
+    padding-top: 130px;
 }
 
 main section {
     padding-top: 20px;
 }
 
-main .espacios,
-    {
+main .espacios {
     background: $color1;
 }
 
@@ -113,6 +116,15 @@ h2 {
     text-align: center;
 }
 
+h5,
+h6 {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
 p {
     font-family: "Open Sans", sans-serif;
 }
@@ -120,18 +132,6 @@ p {
 main .contenedor {
     padding: 30px;
     overflow: hidden;
-}
-
-main .servicio {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main .contenedor .servicio .img-servicio img {
-    max-width: 250px;
-    width: 100%;
 }
 
 main .contenedor .descripcion,
@@ -142,23 +142,21 @@ main .espacios .contenedor .descripcion {
     color: $color2;
 }
 
+main .contenedor .descripcion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color1;
+}
+
 main .espacios .contenedor .img-espacios img {
     width: 500px;
     padding: 0 0 0 20px;
 }
 
-main .espacios .contenedor .descripcion .p-espacios {
-    font-size: 22 px;
-    color: $color2;
-}
-
 main .contenedor .img-idea img {
     width: 500px;
-    padding: 0 0 0 20px;
-}
-
-table {
-    margin: 40px;
+    padding: 0 20px 0 0;
 }
 
 main .contenedor .noticia {
@@ -223,22 +221,33 @@ footer {
     background: $color1;
 
     .contenedor {
-        .mapa {
-            img {
-                max-width: 200px;
-                padding: 10px;
-            }
-        }
+        flex-direction: row;
+        margin-top: 15px;
 
         .direccion {
-            padding: 15px;
+            padding: 0;
             color: $color2;
+
+            h5,
+            h6 {
+                color: $color3;
+                font-family: Arial,
+                    Helvetica,
+                    sans-serif;
+                font-size: 10px;
+                font-weight: 300;
+            }
         }
 
         .redes-sociales {
+            justify-content: flex-end;
+
             img {
-                width: 30px;
+                width: 40px;
+                padding: 5px;
             }
         }
     }
+
+
 }

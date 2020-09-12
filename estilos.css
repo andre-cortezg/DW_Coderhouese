@@ -129,6 +129,7 @@ main .espacios .contenedor .descripcion {
   justify-content: center;
 }
 
+
 main .ambientamos .contenedor .img-ambient img,
 main .espacios .contenedor .img-espacios img {
   width: 500px;
@@ -213,7 +214,15 @@ footer .contenedor .mapa img {
   padding: 25px;
 }
 
-footer .contenedor .contacto {
-  padding: 25px;
-  color: #fff;
+footer .contenedor .direccion {
+  align-self: flex-end;
+}
+
+h5,
+h6 {
+  padding-bottom: 0;
+}
+
+footer .contenedor .redes-sociales {
+  align-self: flex-end;
 }
